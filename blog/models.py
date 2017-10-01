@@ -4,6 +4,9 @@
 from django.db import models
 from django.utils import timezone
 
+def trash():
+	return 1 + 1
+
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
